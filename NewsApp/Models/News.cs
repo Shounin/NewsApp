@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace NewsApp.Models
 {
@@ -11,6 +12,6 @@ namespace NewsApp.Models
         public string Title { get; set; }
         public string Text { get; set; }
         public string Category { get; set; }
-        public DateTime PostDate { get; set; }
+        public DateTime PostDate = DateTime.Now;
     }
 }

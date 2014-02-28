@@ -14,7 +14,6 @@ namespace NewsApp.Controllers
     public class NewsController : Controller
     {
         private NewsContext db = new NewsContext();
-
         // GET: /News/
         public ActionResult Index()
         {
@@ -47,7 +46,7 @@ namespace NewsApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ID,Title,Text,Category,PostDate")] News news)
+        public ActionResult Create([Bind(Include="Title,Text,Category,PostDate")] News news)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +78,7 @@ namespace NewsApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ID,Title,Text,Category,PostDate")] News news)
+        public ActionResult Edit([Bind(Include="Title,Text,Category,PostDate")] News news)
         {
             if (ModelState.IsValid)
             {

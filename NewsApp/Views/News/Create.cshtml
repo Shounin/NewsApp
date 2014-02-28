@@ -35,16 +35,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Category, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Category)
+                @Html.DropDownListFor(model => model.Category, new SelectList(CategoriesList.Items, "CatId", "Name"))
                 @Html.ValidationMessageFor(model => model.Category)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.PostDate, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.PostDate)
-                @Html.ValidationMessageFor(model => model.PostDate)
             </div>
         </div>
 
