@@ -11,6 +11,7 @@
 {
     <div class="container">
         <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-8">
                 <h4>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h4>
                 <p>@Html.DisplayFor(modelItem => item.Text)</p>
@@ -21,58 +22,17 @@
                     <div class="col-md-1">
                         <button type="button" class="btn btn-default btn-sm">@Html.ActionLink("Delete", "Delete", new { id = item.ID })</button>
                     </div>
-                    <div class="col-md-5"></div>
-                    <div class="col-md-2">
-                        <p class="text-right">@Html.DisplayFor(modelItem => item.PostDate)</p>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3">
+                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.PostDate)</em></small></p>
                     </div>
-                    <div class="col-md-2">
-                        <p class="text-right">@Html.DisplayFor(modelItem => item.Category)</p>
+                    <div class="col-md-1">
+                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.Category)</em></small></p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-3"></div>
          </div>
     </div>
+        <br/>
 }
-
-    @*
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Title)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Text)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Category)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PostDate)
-                </th>
-                <th></th>
-            </tr>
-
-        @foreach (var item in Model.Reverse()) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Text)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Category)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PostDate)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-                </td>
-            </tr>
-        }
-
-        </table>
-    *@
