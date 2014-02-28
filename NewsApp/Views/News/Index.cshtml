@@ -12,12 +12,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+                <h4>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h4>
                 <p>@Html.DisplayFor(modelItem => item.Text)</p>
                 <div class="row">
-                    <div class="col-md-1">
-                        <button type="button" class="btn btn-default btn-sm">@Html.ActionLink("Edit", "Edit", new { id = item.ID })</button>
-                    </div>
                     <div class="col-md-1">
                         <button type="button" class="btn btn-default btn-sm">@Html.ActionLink("Details", "Details", new { id = item.ID })</button>
                     </div>

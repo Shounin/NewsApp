@@ -6,7 +6,7 @@ using System.Web;
 
 namespace NewsApp.DAL
 {
-    public class NewsInitializer :System.Data.Entity. DropCreateDatabaseIfModelChanges<NewsContext>
+    public class NewsInitializer :System.Data.Entity. DropCreateDatabaseAlways<NewsContext>
     {
         protected override void Seed(NewsContext context)
         {
