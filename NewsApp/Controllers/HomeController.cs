@@ -15,14 +15,14 @@ namespace NewsApp.Controllers
 
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
+			ViewBag.Message = "About the site";
 
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
+			ViewBag.Message = "If in trouble, please feel free to contact us";
 
 			return View();
 		}
