@@ -49,6 +49,11 @@ namespace NewsApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Title,Text,Category,PostDate")] News news)
         {
+            if(news.Title == null)
+            {
+                
+                return View("Create");
+            }
             if (ModelState.IsValid)
             {
                 db.News.Add(news);
