@@ -17,6 +17,11 @@
     padding-right: 15px;
 }
 
+.text-timedate {
+    color: gray;
+    text-align: right;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -29,8 +34,12 @@ textarea{
 }
 
 /* styles for validation helpers */
+textarea.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
 .field-validation-error {
-    color: #b94a48;
+    color: #b94a48 !important;
 }
 
 .field-validation-valid {

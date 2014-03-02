@@ -14,10 +14,10 @@
             <div class="col-md-10">
                 <div class="row">
                    <div class="col-md-9">
-                      <h4>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h4>
+                      <h3>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h3>
                     </div>
                     <div class="col-md-3">
-                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.PostDate)  <span class="glyphicon glyphicon-time"></span></em></small></p>
+                        <p class="text-timedate"><small><em>@Html.DisplayFor(modelItem => item.PostDate)  <span class="glyphicon glyphicon-time"></span></em></small></p>
                     </div>
                 </div>
                 <p>@Html.DisplayFor(modelItem => item.Text)</p>
