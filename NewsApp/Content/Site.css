@@ -3,7 +3,7 @@
     padding-bottom: 20px;
 }
  /*This here adds a border and background color to our news items.*/
-.col-md-8{
+.col-md-10{
     border:solid 1px rgb(235,235,235);
     border-radius: 6px;
     background-color: rgb(245,245,245);
@@ -11,10 +11,6 @@
     padding-top: 1em; 
 }
 
-.text-edit{
-    width: 2000px;
-    height: 700px;
-}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -25,7 +21,11 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 800px;
+}
+
+textarea{
+    max-height: 300px;
 }
 
 /* styles for validation helpers */
