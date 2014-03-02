@@ -16,9 +16,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                @*Returns the user to the "Index" (main page)*@
                 @Html.ActionLink("News Application", "Index", "News", null, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
+                @*The Nav bar, with links to the main page (same as above), to create a new news item, to read about the site or contact information*@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "News")</li>
                     <li>@Html.ActionLink("Create News Item", "Create", "News")</li>
