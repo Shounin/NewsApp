@@ -13,16 +13,23 @@
         <div class="row news">
             <div class="col-md-1"></div>
             <div class="col-md-8">
-                <h4>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h4>
+                <div class="row">
+                    <div class="col-md-9">
+                      <h4>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h4>
+                        </div>
+                    <div class="col-md-3">
+                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.PostDate)  <span class="glyphicon glyphicon-time"></span></em></small></p>
+                    </div>
+                </div>
                 <p>@Html.DisplayFor(modelItem => item.Text)</p>
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-7"></div>
                     <div class="col-md-3">
-                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.PostDate) <span class="glyphicon glyphicon-time"></span></em></small></p>
+                        
                     </div>
                     <div class="col-md-1">
-                        <p class="text-right"><small><em>@Html.DisplayFor(modelItem => item.Category)</em></small></p>
+          
                     </div>
                 </div>
             </div>
