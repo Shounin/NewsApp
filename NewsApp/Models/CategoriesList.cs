@@ -7,27 +7,28 @@ namespace System.Web.Mvc
 {
     public class cate
     {
-        public string CatId { get; set; }
-        public string Name { get; set; }
+        public string catId { get; set; }
+        public string name { get; set; }
     }
     public class CategoriesList
     {
+        //this is a categories list made to populate the drop down menu for the create/edit functions..  Maybe id and Name could be the same?
         public static IEnumerable<cate> Items = new List<cate> {
         new cate {
-            CatId = "Politics",
-            Name = "Politics"
+            catId = "Politics",
+            name = "Politics"
         },
         new cate {
-            CatId = "News",
-            Name = "News"
+            catId = "News",
+            name = "News"
         },
         new cate {
-            CatId = "Sports",
-            Name = "Sports"
+            catId = "Sports",
+            name = "Sports"
         },
         new cate {
-            CatId = "Education",
-            Name = "Education"
+            catId = "Education",
+            name = "Education"
         }
     };
     }

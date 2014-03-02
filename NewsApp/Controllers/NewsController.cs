@@ -18,6 +18,7 @@ namespace NewsApp.Controllers
         // GET: /News/
         public ActionResult Index()
         {
+            //Making a new list that is in decending ID order.
             var news = from s in db.News
                        select s;
             news = news.OrderByDescending(s => s.ID);

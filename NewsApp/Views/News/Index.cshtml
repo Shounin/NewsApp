@@ -6,7 +6,7 @@
     
 <h2>Latest News</h2>
 
-    
+    @*Show the top ten items from the database*@
     @foreach (var item in Model.Take(10))
 {
     <div class="container">
@@ -14,7 +14,7 @@
             <div class="col-md-10">
                 <div class="row">
                    <div class="col-md-9">
-                      <h3>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h3>
+                      <h3>@Html.ActionLink(item.Title, "Edit", new { id = item.ID })</h3> @*The title of each news story works as an action link*@
                     </div>
                     <div class="col-md-3">
                         <p class="text-timedate"><small><em>@Html.DisplayFor(modelItem => item.PostDate)  <span class="glyphicon glyphicon-time"></span></em></small></p>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-1">
           
-                    </div>
+                    </div> @*Visual studio sure likes putting divs absolutely everywhere.*@
                 </div>
             </div>
             <div class="col-md-2"></div>

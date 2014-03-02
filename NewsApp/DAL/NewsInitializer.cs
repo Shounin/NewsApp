@@ -10,6 +10,7 @@ namespace NewsApp.DAL
     {
         protected override void Seed(NewsContext context)
         {
+            //This was used to initialize the database but it is no longer being used.
             var news = new List<News>
             {
                 new News{Title="HOLY CRAP ITS RAINING MEN", Text="There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add", Category="News", PostDate=DateTime.Now},

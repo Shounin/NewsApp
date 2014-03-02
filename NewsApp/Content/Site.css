@@ -16,7 +16,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
+/*Making the glyphicon and date/time grey*/
 .text-timedate {
     color: gray;
     text-align: right;
@@ -28,7 +28,7 @@ select,
 textarea {
     max-width: 800px;
 }
-
+/*Keeping that damn textarea under control*/
 textarea{
     max-height: 300px;
 }
