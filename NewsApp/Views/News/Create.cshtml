@@ -26,8 +26,10 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Text, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Text)
+            <div class="col-md-10 text">
+                <div class="text-edit">
+                    @Html.TextAreaFor(model => model.Text, new { cols = 3000, rows = 10 })
+                </div>
                 @Html.ValidationMessageFor(model => model.Text)
             </div>
         </div>

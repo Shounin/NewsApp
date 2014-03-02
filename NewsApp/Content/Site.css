@@ -11,6 +11,10 @@
     padding-top: 1em; 
 }
 
+.text-edit{
+    width: 2000px;
+    height: 700px;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
