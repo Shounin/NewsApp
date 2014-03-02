@@ -12,13 +12,20 @@ namespace NewsApp.DAL
         {
             var news = new List<News>
             {
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
-                new News{Title="HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="1 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="2 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="3 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="4 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="5 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="6 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="7 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="8 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="9 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="10 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="11 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="12 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="13 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
+                new News{Title="14 HOLY FUCKSICLES ITS RAINING MEN", Text="There isn't really anything to add", Category="News", PostDate=DateTime.Now},
             };
             news.ForEach(s => context.News.Add(s));
             context.SaveChanges();
