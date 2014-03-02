@@ -18,7 +18,10 @@ namespace NewsApp.Controllers
         // GET: /News/
         public ActionResult Index()
         {
-            return View(db.News.ToList());
+            var news = from s in db.News
+                       select s;
+            news = news.OrderByDescending(s => s.ID);
+            return View(news.ToList());
         }
 
         // GET: /News/Details/5
