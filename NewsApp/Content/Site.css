@@ -2,6 +2,11 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.col-md-8{
+    border:solid 1px black;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
