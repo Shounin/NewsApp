@@ -3,7 +3,7 @@
     padding-bottom: 20px;
 }
  /*This here adds a border and background color to our news items.*/
-.col-md-8{
+.col-md-10{
     border:solid 1px rgb(235,235,235);
     border-radius: 6px;
     background-color: rgb(245,245,245);
